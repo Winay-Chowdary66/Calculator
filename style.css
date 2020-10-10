@@ -1,0 +1,17 @@
+* {margin: 0;padding: 0;box-sizing: border-box;font-family: 'Poppins', sans-serif;}
+
+body {background-color: #000;display: flex;flex-direction: column;align-items: center;text-align: center;justify-content: center;width: 100%;height: 100vh;}
+
+.calci-container {height: 50vh;width: 30%;text-align: center;align-items: center;justify-content: space-between;display: inline-block;vertical-align: middle;}
+.calci-screen {width: 100%;height: 8vh;margin-top: -30px; margin-bottom: 20px;border: 2px solid snow;outline: none;background-color: rgb(195, 199, 197);padding: 20px;font-size: 25px;letter-spacing: 2px;    }
+button {cursor: pointer;position: relative;outline: none;height: 15%;margin: 10px;text-align: center;width: 60px;border: 1px solid rgb(255, 255, 255);background-color: #000;color: #fff;padding: 4px 0px 4px 0px;font-size: 25px;box-shadow:  5px 5px rgb(0, 0, 0);}
+
+
+@media screen and (max-width: 767px) {
+    body{overflow: hidden;
+    }
+	.calci-container {height: 100vh; position: relative;top: -70px;height: 60vh;width: 100%;display: inline-block;vertical-align: middle;
+	}
+    .calci-screen{ width: 93%;margin-bottom: 10px;margin-top: -30px;
+    }
+}
