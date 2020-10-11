@@ -1,9 +1,9 @@
 const calciContainer = document.querySelector('.calci-container');
 const calciScreen = document.querySelector('.calci-screen');
 
-let i = 0;
+let i = 9;
 let calciScreenValue = calciScreen.value;
-while (i < 10) {
+while (i >= 0) {
 	let numberBtns = document.createElement('button');
 	numberBtns.innerText = i;
 	let createClsAttr = document.createAttribute('class');
@@ -11,7 +11,7 @@ while (i < 10) {
 	numberBtns.setAttributeNode(createClsAttr);
 	calciContainer.appendChild(numberBtns);
 
-	i++;
+	i--;
 }
 
 let operatorsArr = [ '+', '-', '*', '%', '.', '/', '&', '|', '^', '(', ')', '~', '>>', '<<', '!' ],
