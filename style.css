@@ -8,8 +8,8 @@ button {cursor: pointer;position: relative;outline: none;height: 15%;margin: 10p
 
 
 @media screen and (max-width: 767px) {
-    body{overflow: hidden;
-    }
+   /* body{overflow: hidden;
+    }*/
 	.calci-container {height: 100vh; position: relative;top: -70px;height: 60vh;width: 100%;display: inline-block;vertical-align: middle;
 	}
     .calci-screen{ width: 93%;margin-bottom: 10px;margin-top: -30px;
