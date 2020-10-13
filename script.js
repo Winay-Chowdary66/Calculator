@@ -24,14 +24,30 @@ while (j < operatorsArr.length) {
 
 	j++;
 }
+
 const buttonEls = document.querySelectorAll('button');
 
 buttonEls.forEach((btnEl) => {
 	btnEl.addEventListener('click', () => {
 		btnEl.style.color = 'blue';
 		calciScreen.value += btnEl.innerText;
+		calciScreen.style.color = 'forestgreen'
 	});
 });
+
+let createSqRootBtn = document.createElement('button');
+createSqRootBtn.innerText = '√';
+createSqRootBtn.addEventListener('click',()=>{
+	calciScreen.value = Math.pow(calciScreen.value,1/2);
+})
+calciContainer.appendChild(createSqRootBtn);
+
+let createInverseBtn = document.createElement('button');
+createInverseBtn.innerText = '1/x';
+createInverseBtn.addEventListener('click',()=>{
+	calciScreen.value = Math.pow(calciScreen.value,-1);
+})
+calciContainer.appendChild(createInverseBtn);
 
 
 let allClearBtn = document.createElement('button');
